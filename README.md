@@ -8,10 +8,14 @@ Built with the MERN-style stack using **Node.js, Express, MongoDB**, and **EJS**
 
 ## Preview
 ![image](https://github.com/user-attachments/assets/cfab04f1-c3c6-4a1d-8ca9-5551c253dca4)
-![image](https://github.com/user-attachments/assets/215efa1b-4839-4147-ac7a-811ad15af9e2)
+<br>
+![image](https://github.com/user-attachments/assets/215efa1b-4839-4147-ac7a-811ad15af9e2)<br>
 ![image](https://github.com/user-attachments/assets/9ec3c3ed-2a42-4aa5-a261-96b006a8ca78)
+<br>
 ![image](https://github.com/user-attachments/assets/8924442b-990e-4572-9076-6b7771ce68b2)
+<br>
 ![image](https://github.com/user-attachments/assets/547960ef-4dd0-4086-b840-54e3c36622e8)
+<br>
 
 
 
