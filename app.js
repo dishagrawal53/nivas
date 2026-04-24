@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 const mongoose = require("mongoose");
-const MONGO_URL = "mongodb://127.0.0.1:27017/nivas";
+// const MONGO_URL = "mongodb://127.0.0.1:27017/nivas";
 
 const Listing = require("./models/listing.js");
 const User = require("./models/user.js");
