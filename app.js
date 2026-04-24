@@ -27,17 +27,7 @@ const flash = require("connect-flash");
 
 require("dotenv").config();
 const dbUrl=process.env.ATLASDB_URL;
-main()
-.then(() =>{
-    console.log("connected to db");
-})
-.catch((err)=>{
-    console.log(err);
-});
 
-async function main(){
-    await mongoose.connect(dbUrl);
-}
 app.set("view engine","ejs");
 app.set("views",path.join(__dirname,"views"));
 app.use(express.urlencoded({ extended: true }));
