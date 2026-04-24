@@ -1,4 +1,5 @@
 # 🏡 Nivas – A Platform for Property Listings and Reviews
+## Live demo link:https://nivas-cb7q.onrender.com
 
 **Nivas** is a full-stack web application designed to simplify the process of listing and discovering rental or stay properties. It enables users to create, view, edit, and delete property listings, while also allowing others to leave reviews and ratings on each listing.
 
