@@ -1,21 +1,28 @@
-const express=require("express");
-const app=express();
-const mongoose=require("mongoose");
-const MONGO_URL="mongodb://127.0.0.1:27017/nivas";
-const Listing=require("../wanderlust/models/listing.js");
-const User=require("../wanderlust/models/user.js");
-const passport=require("passport");
-const LocalStrategy=require("passport-local");
-const path=require("path");
-const ejsMate=require("ejs-mate");
-const methodOverride=require("method-override");
-const wrapAsync=require("../wanderlust/utils/wrapAsync.js");
-const ExpressError=require("../wanderlust/utils/ExpressError.js");
-const listingRouter=require("./routes/listing.js");
-const reviewRouter=require("./routes/review.js");
-const userRouter=require("./routes/user.js");
-const session=require("express-session");
-const flash=require("connect-flash");
+const express = require("express");
+const app = express();
+
+const mongoose = require("mongoose");
+const MONGO_URL = "mongodb://127.0.0.1:27017/nivas";
+
+const Listing = require("./models/listing.js");
+const User = require("./models/user.js");
+
+const passport = require("passport");
+const LocalStrategy = require("passport-local");
+
+const path = require("path");
+const ejsMate = require("ejs-mate");
+const methodOverride = require("method-override");
+
+const wrapAsync = require("./utils/wrapAsync.js");
+const ExpressError = require("./utils/ExpressError.js");
+
+const listingRouter = require("./routes/listing.js");
+const reviewRouter = require("./routes/review.js");
+const userRouter = require("./routes/user.js");
+
+const session = require("express-session");
+const flash = require("connect-flash");
 require("dotenv").config();
 const dbUrl=process.env.ATLASDB_URL;
 main()

@@ -1,6 +1,6 @@
-const Listing=require("D:/projects/wanderlust/models/listing.js");
-const Review=require("D:/projects/wanderlust/models/review.js");
-const ExpressError=require("D:/projects/wanderlust/utils/ExpressError.js");
+const Listing = require("../models/listing.js");
+const Review = require("../models/review.js");
+const ExpressError = require("../utils/ExpressError.js");
 const {listingSchema,reviewSchema}=require("D:/projects/wanderlust/schema.js");
 module.exports.isLoggedIn=(req,res,next)=>{
     if(!req.isAuthenticated()){
