@@ -1,9 +1,10 @@
-const express=require("express");
-const router=express.Router({mergeParams:true});
-const Listing=require("D:/projects/wanderlust/models/listing.js");
-const wrapAsync=require("D:/projects/wanderlust/utils/wrapAsync.js");
-const Review=require("D:/projects/wanderlust/models/review.js");
-const {isLoggedIn,validateReview,isReviewAuthor}=require("D:/projects/wanderlust/middleware.js");
+const express = require("express");
+const router = express.Router({ mergeParams: true });
+
+const Listing = require("../models/listing.js");
+const wrapAsync = require("../utils/wrapAsync.js");
+const Review = require("../models/review.js");
+const { isLoggedIn, validateReview, isReviewAuthor } = require("../middleware.js");
 router.post("/",isLoggedIn,validateReview,wrapAsync(async(req,res)=>{
   let listing= await Listing.findById(req.params.id);
   let newReview=new Review(req.body.review);

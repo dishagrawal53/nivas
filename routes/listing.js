@@ -1,8 +1,9 @@
-const express=require("express");
-const router=express.Router();
-const Listing=require("D:/projects/wanderlust/models/listing.js");
-const wrapAsync=require("D:/projects/wanderlust/utils/wrapAsync.js");
-const {isLoggedIn,isOwner,validateListing}=require("D:/projects/wanderlust/middleware.js");
+const express = require("express");
+const router = express.Router();
+
+const Listing = require("../models/listing.js");
+const wrapAsync = require("../utils/wrapAsync.js");
+const { isLoggedIn, isOwner, validateListing } = require("../middleware.js");
 
 router.get("/",wrapAsync(async(req,res)=>{
     const allListings = await Listing.find({});
